@@ -119,13 +119,16 @@ public abstract class AbstractParentCommand extends AbstractCommand
 	/**
 	 * Gets supported commands.
 	 *
+	 * @param context
+	 * 	command context
+	 *
 	 * @return
 	 * 	supported commands, name to implementing class.
 	 */
 	protected abstract Map<String, Class<? extends Command>> configSubCommands(CommandContext context);
 
 	/**
-	 * @inheritDoc
+	 * {@inheritDoc}
 	 *
 	 * ParentCommand should provide the subcommand first ("help"), possibly listing other options.
 	 */
@@ -178,8 +181,9 @@ public abstract class AbstractParentCommand extends AbstractCommand
 	 * 	command context
 	 * @param name
 	 * 	name of subcommand.
-	 *
 	 * @param isHelp
+	 * 	indicator whether it is help command
+	 *
 	 * @return
 	 * 	child command context.
 	 */

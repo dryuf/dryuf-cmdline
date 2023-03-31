@@ -411,6 +411,8 @@ public abstract class AbstractCommand implements Command
 	/**
 	 * Utility method to format commands or options output.
 	 *
+	 * @param context
+	 * 	command context
 	 * @param options
 	 * 	map of option name and its explanation.
 	 *
@@ -447,6 +449,8 @@ public abstract class AbstractCommand implements Command
 	 *
 	 * @param content
 	 * 	input string
+	 * @param indentation
+	 * 	indentation level
 	 *
 	 * @return
 	 * 	indented string.
